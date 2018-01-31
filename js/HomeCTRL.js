@@ -1,4 +1,4 @@
-app.controller("homeCtrl", function($scope, $state) {
+app.controller("HomeCtrl", function($scope, $state) {
 
   console.log("inside Home Controller controller");
 

@@ -1,6 +1,8 @@
-app.controller("loginCtrl", function($scope, $state) {
+app.controller("LoginCtrl", function($scope, $state) {
 
   console.log("inside Login Controller controller");
+
+  $scope.headerCheck = false;
 
 
 
