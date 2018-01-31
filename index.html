@@ -1,30 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <title>Bootstrap Simple Login Form</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"></script>
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" href="css/sidebar.css"/>
-<script src="app.js"></script>
+<script type='text/javascript' src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<script src="js/LoginCTRL.js"></script>
-<script src="js/AboutCTRL.js"></script>
-<script src="js/ClientCTRL.js"></script>
-<script src="js/ContactCTRL.js"></script>
-<script src="js/DashboardCTRL.js"></script>
-<script src="js/HomeCTRL.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+   <script type='text/javascript' src="js/adminlte.min.js"></script>
+
+   <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
+
+   <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.2/css/AdminLTE.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.2/css/skins/_all-skins.min.css">
+   <link rel="stylesheet" href="css/style.css"/>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+  <script src="app.js"></script>
+  <script src="js/FlipkartCTRL.js"></script>
+  <script src="js/AmazonCTRL.js"></script>
+  <script src="js/SwiggyCTRL.js"></script>
+  <script src="js/ZomatoCTRL.js"></script>
+  <script src="js/Box8CTRL.js"></script>
+  <script src="js/DominosCTRL.js"></script>
+   <script src="js/LoginCTRL.js"></script>
+   <script src="js/HomeCTRL.js"></script>
 
 </head>
-<body ng-app="myApp" style="margin-top=50px;">
+<body class="hold-transition skin-blue sidebar-mini" ng-controller="indexCtrl" ng-app="myApp" style="margin-top=50px;">
+  <div ng-show="sidebarHeaderFooter" ng-include="'html/header.html'"></div>
+  <div ng-show="sidebarHeaderFooter">
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+
+        <!-- search form -->
+
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="treeview">
+            <a href="">
+              <i class="fa fa-sort-desc"></i>
+              <span>Toggle</span>
+              <span class="pull-right-container">
+                <span class="label label-primary pull-right">2</span>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#!/amazon"><i class="fa fa-circle-o"></i>Amazon</a></li>
+              <li><a href="#!/flipkart"><i class="fa fa-circle-o"></i>Flipkart</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!/swiggy">
+              <i class="fa fa-link"></i> <span>Swiggy</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green">click</small>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#!/zomato">
+              <i class="fa fa-link"></i> <span>Zomato</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green">click</small>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#!/dominos">
+              <i class="fa fa-link"></i> <span>Dominos</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green">click</small>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#!/box8">
+              <i class="fa fa-link"></i> <span>Box 8</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green">click</small>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+  </div>
 <div data-ui-view></div>
+
+<div ng-show="sidebarHeaderFooter" ng-include="'html/footer.html'"></div>
+
+<script>
+app.controller("indexCtrl",function($scope){
+  $scope.sidebarHeaderFooter = false;
+})
+</script>
 </body>
 </html>

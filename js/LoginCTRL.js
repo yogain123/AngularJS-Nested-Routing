@@ -14,6 +14,8 @@ app.controller("LoginCtrl", function($scope, $state) {
 
   else if($scope.username=="shadowfax" && $scope.password=="12345")
   {
+  $scope.$parent.sidebarHeaderFooter = true;
+  console.log("sidebarAndHeader "+$scope.sidebarAndHeader);
   $state.go('/home', {
      reload: false
    });

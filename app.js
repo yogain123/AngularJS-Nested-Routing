@@ -16,28 +16,40 @@ app.config(function($urlRouterProvider, $stateProvider) {
       templateUrl: "html/home.html",
       controller: "HomeCtrl"
     })
-    .state('/about', {
-      url: "/about",
+    .state('/amazon', {
+      url: "/amazon",
       params: {},
-      templateUrl: "html/about.html",
-      controller: "AboutCtrl"
+      templateUrl: "html/amazon.html",
+      controller: "AmazonCtrl"
     })
-    .state('/client', {
-      url: "/client",
+    .state('/flipkart', {
+      url: "/flipkart",
       params: {},
-      templateUrl: "html/client.html",
-      controller: "ClientCtrl"
+      templateUrl: "html/flipkart.html",
+      controller: "FlipkartCtrl"
     })
-    .state('/contact', {
-      url: "/contact",
+    .state('/swiggy', {
+      url: "/swiggy",
       params: {},
-      templateUrl: "html/contact.html",
-      controller: "ContactCtrl"
+      templateUrl: "html/swiggy.html",
+      controller: "SwiggyCtrl"
     })
-    .state('/dashboard', {
-      url: "/dashboard",
+    .state('/zomato', {
+      url: "/zomato",
       params: {},
-      templateUrl: "html/dashboard.html",
-      controller: "DashboardCtrl"
+      templateUrl: "html/zomato.html",
+      controller: "ZomatoCtrl"
+    })
+    .state('/dominos', {
+      url: "/dominos",
+      params: {},
+      templateUrl: "html/dominos.html",
+      controller: "DominosCtrl"
+    })
+    .state('/box8', {
+      url: "/box8",
+      params: {},
+      templateUrl: "html/box8.html",
+      controller: "Box8Ctrl"
     });
 });
