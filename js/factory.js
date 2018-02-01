@@ -7,48 +7,23 @@ app.factory("fakedataFactory",function(){
     let fakeData = [
   	{
       "id": 1,
-  		"firstname": "Talon",
-  		"lastname": "Cain"
+  		"name": "Big Basket",
+  		"location": "Delhi"
   	},
   	{
-  		"id": 41,
-  		"firstname": "Wallace",
-  		"lastname": "Vaughn"
+  		"id": 2,
+  		"name": "PayTm",
+  		"location": "Bangalore"
   	},
   	{
-  		"id": 30,
-  		"firstname": "Austin",
-  		"lastname": "Wilkins"
+  		"id": 3,
+  		"name": "Jabong",
+  		"location": "Mumbai"
   	},
   	{
-  		"id": 91,
-  		"firstname": "Omar",
-  		"lastname": "Mcleod"
-  	},
-  	{
-  		"id": 72,
-  		"firstname": "Colby",
-  		"lastname": "Kirk"
-  	},
-  	{
-  		"id": 8,
-  		"firstname": "Gareth",
-  		"lastname": "Miranda"
-  	},
-  	{
-  		"id": 19,
-  		"firstname": "Richard",
-  		"lastname": "Booker"
-  	},
-  	{
-  		"id": 65,
-  		"firstname": "Ferris",
-  		"lastname": "Wyatt"
-  	},
-  	{
-  		"id": 26,
-  		"firstname": "Austin",
-  		"lastname": "Roth"
+  		"id": 4,
+  		"name": "Fortis",
+  		"location": "Bangalore"
   	},
   ];
 

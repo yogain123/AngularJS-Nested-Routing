@@ -4,9 +4,11 @@
   <section class="content-header">
     <h1>
       This is an Amazon Client Page
-      <small>(Amazon panel)</small>
+      <small>(Amazon panel : Redirercted using UI-Routing)</small>
     </h1>
+    <h5>Below are Some FakeData for Amazon Page</h5>
   </section>
+  <img style="margin-top:20px;" class="img-responsive center-block" src="../image/amazon.jpg"  width="43%">
 
   <!-- Main content -->
   <section class="content">
@@ -14,15 +16,15 @@
 <thead class="thead-dark">
   <tr>
     <th scope="col">ID</th>
-    <th scope="col">First</th>
-    <th scope="col">Last</th>
+    <th scope="col">Name</th>
+    <th scope="col">Location</th>
   </tr>
 </thead>
 <tbody>
   <tr ng-repeat="item in fakeData">
     <th scope="row">{{item.id}}</th>
-    <td>{{item.firstname}}</td>
-    <td>{{item.lastname}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.location}}</td>
   </tr>
 </tbody>
 </table>

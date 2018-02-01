@@ -3,76 +3,32 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Dominos
-      <small>Dominos panel</small>
+      This is Dominos Client Page
+      <small>(Dominos panel : Redirercted using UI-Routing)</small>
     </h1>
+    <h5>Below are Some FakeData for Dominos Page</h5>
   </section>
+  <img style="margin-top:20px;" class="img-responsive center-block" src="../image/dominos.jpg"  width="40%">
 
   <!-- Main content -->
   <section class="content">
-    <table class="table">
+    <table class="table table-striped">
 <thead class="thead-dark">
   <tr>
     <th scope="col">ID</th>
-    <th scope="col">First</th>
-    <th scope="col">Last</th>
+    <th scope="col">Name</th>
+    <th scope="col">Location</th>
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
+  <tr ng-repeat="item in fakeData">
+    <th scope="row">{{item.id}}</th>
+    <td>{{item.name}}</td>
+    <td>{{item.location}}</td>
   </tr>
 </tbody>
 </table>
-    </section>
+  </section>
 
   <!-- /.content -->
 </div>
