@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-   <script type='text/javascript' src="js/adminlte.min.js"></script>
+   <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.2/js/adminlte.min.js"></script>
 
    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
 
@@ -21,7 +21,9 @@
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
+
   <script src="app.js"></script>
+  <script src="js/factory.js"></script>
   <script src="js/FlipkartCTRL.js"></script>
   <script src="js/AmazonCTRL.js"></script>
   <script src="js/SwiggyCTRL.js"></script>
@@ -31,8 +33,9 @@
    <script src="js/LoginCTRL.js"></script>
    <script src="js/HomeCTRL.js"></script>
 
+
 </head>
-<body class="hold-transition skin-blue sidebar-mini" ng-controller="indexCtrl" ng-app="myApp" style="margin-top=50px;">
+<body class="hold-transition skin-blue sidebar-mini" ng-controller="indexCtrl" ng-app="myApp">
   <div ng-show="sidebarHeaderFooter" ng-include="'html/header.html'"></div>
   <div ng-show="sidebarHeaderFooter">
     <aside class="main-sidebar">

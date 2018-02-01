@@ -9,7 +9,7 @@
 
 
         <div class="form-group">
-            <input type="password" class="form-control" name="password" ng-model="password" placeholder="Password" required="required">
+            <input ng-keyup="$event.keyCode == 13 ? login() : null" type="password" class="form-control" name="password" ng-model="password" placeholder="Password" required="required">
         </div>
         <span class="help-block" ng-show="(submitted || MyForm.password.$touched) && MyForm.password.$error.required && MyForm.password.$invalid"><font color="#FF5B37"><strong>
                      Password is required.</strong></font></span>

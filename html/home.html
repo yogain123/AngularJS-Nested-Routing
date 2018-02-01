@@ -3,14 +3,15 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Home
-      <small>Home panel</small>
+      Hello, Welcome to Home Page
+      <small>(Home panel)</small>
     </h1>
+    <h5>Below table shows the clients of ShadowFax</h5>
   </section>
 
   <!-- Main content -->
   <section class="content">
-    <table class="table">
+    <table class="table table-striped">
 <thead class="thead-dark">
   <tr>
     <th scope="col">ID</th>
@@ -19,56 +20,10 @@
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
+  <tr ng-repeat="item in fakeData">
+    <th scope="row">{{item.id}}</th>
+    <td>{{item.firstname}}</td>
+    <td>{{item.lastname}}</td>
   </tr>
 </tbody>
 </table>

@@ -1,4 +1,4 @@
-app.controller("SwiggyCtrl", function($scope, $state) {
+app.controller("SwiggyCtrl", function($scope, $state,fakedataFactory) {
 
   console.log("inside Swiggy Controller");
 
