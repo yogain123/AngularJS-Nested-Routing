@@ -8,26 +8,26 @@
     </h1>
     <h5>Below are Some FakeData for Swiggy Page</h5>
   </section>
-  <img style="margin-top:20px;" class="img-responsive center-block" src="../image/swiggy.jpg"  width="40%">
+  <img style="margin-top:20px;" class="img-responsive center-block" src="../image/swiggy.jpg" width="40%">
 
   <!-- Main content -->
   <section class="content">
     <table class="table table-striped">
-<thead class="thead-dark">
-  <tr>
-    <th scope="col">ID</th>
-    <th scope="col">Nameirst</th>
-    <th scope="col">Location</th>
-  </tr>
-</thead>
-<tbody>
-  <tr ng-repeat="item in fakeData">
-    <th scope="row">{{item.id}}</th>
-    <td>{{item.name}}</td>
-    <td>{{item.location}}</td>
-  </tr>
-</tbody>
-</table>
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in fakeData">
+          <th scope="row">{{item.id}}</th>
+          <td>{{item.name}}</td>
+          <td>{{item.location}}</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <!-- /.content -->
