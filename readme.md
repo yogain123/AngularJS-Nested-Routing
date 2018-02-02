@@ -47,3 +47,12 @@ _**Note** : Firebase Server Live preview will not be fast on Initial load of Res
 
 
 **NOTE :  The project will run Properly only on _Live Server_ as it is an AngularJS (UI-Route) Task.**
+
+
+## Acknowledgments
+
+* Bootstrap
+* UI-Routing
+* Firebase
+* AdminLTE
+* Google Font Awesome
