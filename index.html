@@ -33,83 +33,10 @@
   <script src="js/DominosCTRL.js"></script>
   <script src="js/LoginCTRL.js"></script>
   <script src="js/HomeCTRL.js"></script>
-
-
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini" ng-controller="indexCtrl" ng-app="myApp">
-  <div ng-show="sidebarHeaderFooter" ng-include="'html/header.html'"></div>
-  <div ng-show="sidebarHeaderFooter">
-    <aside class="main-sidebar">
-      <!-- sidebar: style can be found in sidebar.less -->
-      <section class="sidebar">
-        <!-- Sidebar user panel -->
-
-        <!-- search form -->
-
-        <!-- /.search form -->
-        <!-- sidebar menu: : style can be found in sidebar.less -->
-        <ul class="sidebar-menu" data-widget="tree">
-          <li class="treeview">
-            <a href="">
-              <i class="fa fa-sort-desc"></i>
-              <span>Toggle</span>
-              <span class="pull-right-container">
-                <span class="label label-primary pull-right">2</span>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="#!/amazon"><i class="fa fa-circle-o"></i>Amazon</a></li>
-              <li><a href="#!/flipkart"><i class="fa fa-circle-o"></i>Flipkart</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!/swiggy">
-              <i class="fa fa-link"></i> <span>Swiggy</span>
-              <span class="pull-right-container">
-                <small class="label pull-right bg-green">click</small>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#!/zomato">
-              <i class="fa fa-link"></i> <span>Zomato</span>
-              <span class="pull-right-container">
-                <small class="label pull-right bg-green">click</small>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#!/dominos">
-              <i class="fa fa-link"></i> <span>Dominos</span>
-              <span class="pull-right-container">
-                <small class="label pull-right bg-green">click</small>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#!/box8">
-              <i class="fa fa-link"></i> <span>Box 8</span>
-              <span class="pull-right-container">
-                <small class="label pull-right bg-green">click</small>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- /.sidebar -->
-    </aside>
-
-  </div>
-  <div data-ui-view></div>
-
-  <div ng-show="sidebarHeaderFooter" ng-include="'html/footer.html'"></div>
-
-  <script>
-    app.controller("indexCtrl", function($scope) {
-      $scope.sidebarHeaderFooter = false;
-    })
-  </script>
+<body class="hold-transition skin-blue sidebar-mini" ng-app="myApp">
+    <div data-ui-view></div>
 </body>
 
 </html>
